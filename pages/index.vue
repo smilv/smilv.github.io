@@ -19,7 +19,6 @@ const cardList = [
 ];
 </script>
 <template>
-  <div class="w-80 h-80 text-9xl p-4 bg-green-800 content-center text-center font-bold">Sm</div>
   <div class="parallax">
     <div class="bg bg_1">
       <div class="sprite"></div>
@@ -61,7 +60,7 @@ const cardList = [
   </div>
 </template>
 <style lang="scss" scoped>
-@import "@/assets/css/parallax.scss";
+@use "@/assets/css/parallax.scss";
 .bg-grid {
   padding: 10px;
   display: flex;
