@@ -19,6 +19,7 @@ const cardList = [
 ];
 </script>
 <template>
+  <div class="w-80 h-80 text-9xl p-4 bg-green-800 content-center text-center font-bold">Sm</div>
   <div class="parallax">
     <div class="bg bg_1">
       <div class="sprite"></div>
@@ -78,6 +79,7 @@ const cardList = [
   transition: all 0.3s;
   bottom: 0;
   overflow: hidden;
+  width: 100%;
   &:hover {
     bottom: 8px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
