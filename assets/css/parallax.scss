@@ -1,0 +1,78 @@
+.bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 1000px;
+  position: relative;
+}
+.sprite,
+.screen {
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+}
+.bg_1 {
+  background-image: url("/images/parallax/about_bg.jpg");
+}
+.bg_2 {
+  background-image: url("/images/parallax/home_bg.jpg");
+}
+.bg_3 {
+  background-image: url("/images/parallax/design_bg.jpg");
+}
+.bg_4 {
+  background-image: url("/images/parallax/lab_bg.jpg");
+}
+.bg_1 .sprite {
+  background: url("/images/parallax/about_sprite_frei.png") center 143px no-repeat fixed;
+}
+.bg_1 .screen {
+  background: url("/images/parallax/about_frei.png") center 143px no-repeat;
+}
+.bg_2 .sprite {
+  background: url("/images/parallax/home_sprite_frei.png") center 143px no-repeat fixed;
+}
+.bg_2 .screen {
+  background: url("/images/parallax/home_frei.png") center 143px no-repeat;
+}
+.bg_3 .sprite {
+  background: url("/images/parallax/design_sprite_frei.png") center 143px no-repeat fixed;
+}
+.bg_3 .screen {
+  background: url("/images/parallax/design_frei.png") center 143px no-repeat;
+}
+.bg_4 .sprite {
+  background: url("/images/parallax/lab_sprite_frei.png") center 143px no-repeat fixed;
+}
+.bg_4 .screen {
+  background: url("/images/parallax/lab_frei.png") center 143px no-repeat;
+}
+
+.screen .content {
+  width: 280px;
+  margin-left: 20%;
+  margin-top: 10%;
+  color: white;
+}
+h1 {
+  font-family: "DINProBold", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 57px;
+  line-height: 43px;
+  padding: 0 0 10px 0;
+}
+h2 {
+  font-family: Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 24px;
+  padding: 6px 0 18px 0;
+  line-height: 24px;
+}
+.screen .content p {
+  width: 275px;
+  font-size: 13px;
+  font-family: "DINProRegular";
+  color: #6f6e6e;
+}
