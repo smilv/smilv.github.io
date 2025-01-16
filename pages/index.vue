@@ -5,16 +5,19 @@ const cardList = [
     title: "画板",
     description: "一个简单的画板，可以用来画画。",
     image: "drawing_board.png",
+    link: "/infancy/drawingBoard.html",
   },
   {
     title: "计算器",
     description: "一个简单的计算器，可以用来计算。",
     image: "calculator.png",
+    link: "/infancy/calculator.html",
   },
   {
     title: "3D翻转日历",
     description: "一个简单的3D翻转日历，可以用来查看日期。",
     image: "calendar.png",
+    link: "/infancy/3DrevolveCalendar.html",
   },
 ];
 </script>
@@ -47,10 +50,12 @@ const cardList = [
     </div>
   </div>
   <div class="bg-grid">
-    <div class="card" v-for="item in cardList">
+    <div class="card" v-for="(item, index) in cardList" :key="index">
       <div>
-        <a href=""></a>
-        <img :src="`/images/card/${item.image}`" alt="" />
+        <a :href="item.link" target="_blank"></a>
+        <div class="card-image">
+          <img :src="`/images/card/${item.image}`" alt="" />
+        </div>
         <div class="p-4">
           <div class="title">{{ item.title }}</div>
           <p class="description">{{ item.description }}</p>
@@ -83,11 +88,13 @@ const cardList = [
     bottom: 8px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
   }
-  img {
-    display: block;
-    object-fit: cover;
+  .card-image {
     height: 320px;
-    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   .title {
     font-size: 21px;
