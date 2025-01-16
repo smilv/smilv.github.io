@@ -56,7 +56,7 @@ const cardList = [
         <div class="card-image">
           <img :src="`/images/card/${item.image}`" alt="" />
         </div>
-        <div class="p-4">
+        <div class="p-2">
           <div class="title">{{ item.title }}</div>
           <p class="description">{{ item.description }}</p>
         </div>
