@@ -2,20 +2,26 @@
 defineOptions({ name: "Index" });
 const cardList = [
   {
+    title: "AI 业务组件库",
+    description: "使用dify构建的AI业务组件库。",
+    image: "biz_components.png",
+    link: "/storybook-static/index.html",
+  },
+  {
     title: "画板",
-    description: "一个简单的画板，可以用来画画。",
+    description: "使用canvas实现的画板，可以用来绘画和涂鸦。",
     image: "drawing_board.png",
     link: "/infancy/drawingBoard.html",
   },
   {
     title: "计算器",
-    description: "一个简单的计算器，可以用来计算。",
+    description: "计算器，可以进行基本的加减乘除运算。",
     image: "calculator.png",
     link: "/infancy/calculator.html",
   },
   {
     title: "3D翻转日历",
-    description: "一个简单的3D翻转日历，可以用来查看日期。",
+    description: "3D翻转日历，可以显示当前日期和时间。",
     image: "calendar.png",
     link: "/infancy/3DrevolveCalendar.html",
   },
