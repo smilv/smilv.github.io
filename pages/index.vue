@@ -3,7 +3,7 @@ defineOptions({ name: "Index" });
 const cardList = [
   {
     title: "AI 业务组件库",
-    description: "使用dify构建的AI业务组件库。",
+    description: "基于Monorepo架构，使用dify构建的AI业务组件库。",
     image: "biz_components.png",
     link: "/storybook-static/index.html",
   },
