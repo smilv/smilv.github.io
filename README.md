@@ -16,7 +16,6 @@
 ## 项目结构
 
 ```
-.
 ├── app.vue                 # 主应用入口
 ├── nuxt.config.ts         # Nuxt 配置文件
 ├── tailwind.config.ts      # Tailwind CSS 配置
@@ -35,6 +34,40 @@
 │   ├── infancy/           # 历史项目归档
 │   └── storybook-static/  # Storybook 静态输出
 └── server/                # 服务器端配置
+```
+
+## 核心功能
+
+- ✨ 现代化的 Nuxt 3 应用
+- 🎨 Tailwind CSS 样式框架
+- 📱 响应式设计
+- 📦 历史项目归档和展示
+- 🔍 搜索引擎友好
+
+
+## 部署
+
+### GitHub Pages + GitHub Actions 自动部署
+
+本项目采用 GitHub Actions 进行 CI/CD 自动构建和部署。每次提交代码到主分支时，GitHub Actions 将自动：
+1. 安装项目依赖
+2. 构建静态网站
+3. 部署到 GitHub Pages
+
+#### 部署流程说明
+
+```
+Git Push → GitHub Actions 触发
+    ↓
+安装依赖 (pnpm install)
+    ↓
+构建项目 (pnpm generate)
+    ↓
+生成 dist 文件夹
+    ↓
+部署到 GitHub Pages
+    ↓
+网站自动更新至 https://smilv.github.io
 ```
 
 ## 快速开始
@@ -83,40 +116,6 @@ pnpm preview
 ```bash
 # pnpm
 pnpm generate
-```
-
-## 核心功能
-
-- ✨ 现代化的 Nuxt 3 应用
-- 🎨 Tailwind CSS 样式框架
-- 📱 响应式设计
-- 📦 历史项目归档和展示
-- 🔍 搜索引擎友好
-
-
-## 部署
-
-### GitHub Pages + GitHub Actions 自动部署
-
-本项目采用 GitHub Actions 进行 CI/CD 自动构建和部署。每次提交代码到主分支时，GitHub Actions 将自动：
-1. 安装项目依赖
-2. 构建静态网站
-3. 部署到 GitHub Pages
-
-#### 部署流程说明
-
-```
-Git Push → GitHub Actions 触发
-    ↓
-安装依赖 (pnpm install)
-    ↓
-构建项目 (pnpm generate)
-    ↓
-生成 dist 文件夹
-    ↓
-部署到 GitHub Pages
-    ↓
-网站自动更新至 https://smilv.github.io
 ```
 
 ## 资源和文档
